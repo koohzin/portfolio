@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F4827A;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+main.container {
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.home{
+    display: flex;
+    margin-bottom: 50px;
+    background: white;
+    border-radius: 8px;
+}
+.home li{
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    position: relative;
+}
+.home li:hover{
+    color: #F4827A;
+}
+.apresentacao{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.apresentacao h1{
+    margin-bottom: 25px;
+}
+.apresentacao h1 a{
+    color: #F2554A;
+}
+.apresentacao p{
+    font-size: 20px;
+}
+.sobre{
+    display: none;
+    margin-top: 18px;
+
+}
+.sobre img{
+    width:200px;
+}
+.sobre .sobre-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.sobre .sobre-text p{
+    margin-top: 25px;
+    font-weight: 600;
+
+}
+.contato{
+    display: none;
+    flex-direction: column;
+}
+.contato .social{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.contato a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+.contato i{
+    padding: 5px;
+}
+.contato .insta{
+    background: #d03380;
+}
+.contato .git{
+    background: #202020;
+}
+.contato .mail{
+    background: #EA4335;
+}
+.contato .dc{
+    background: #5662F6;
+}
+.habilidades{
+    display: none;
+    flex-direction: column;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.habilidades i{
+    padding: 9px;
+    margin: 0;
+}
+.habilidades span{
+    padding: 4px;
+}
+.habilidades .hab{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.habilidades .html{
+    background: #F16524;
+}
+.habilidades .css{
+    background: #00A1DF;
+}
+.habilidades .js{
+    background: #d6c01b;
+}
