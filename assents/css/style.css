@@ -32,6 +32,9 @@ main.container {
     background: white;
     border-radius: 8px;
 }
+#iconinicio{
+    color: #F4827A;
+}
 .home li{
     list-style-type: none;
     padding: 10px;
@@ -39,8 +42,17 @@ main.container {
     font-size: 1.3rem;
     position: relative;
 }
-.home li:hover{
-    color: #F4827A;
+#iconinicio:hover{
+    color:#F4827A !important;
+}
+#iconsobre:hover{
+    color: #F4827A !important;
+}
+#iconhabilidade:hover{
+    color: #F4827A !important;
+}
+#iconcontato:hover{
+    color: #F4827A !important;
 }
 .apresentacao{
     margin-top: 30px;
