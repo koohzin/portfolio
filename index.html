@@ -9,7 +9,11 @@
     <link rel="shortcut icon" href="assents/images/logoko1.png" type="image/x-icon">
     <title>Ko Portfólio</title>
 </head>
-<body>
+<body onload="iniciar()">
+    <div class="darkm">
+        <input type="checkbox" id="darkmode">
+        <label for="darkmode" class="labeldark" onclick="clickdark()">Dark Mode Off</label>
+    </div>
     <div class="home">
         <li onclick="vinicio()" id="iconinicio">Início</li>
         <li onclick="vsobre()" id="iconsobre">Sobre</li>
@@ -24,6 +28,7 @@
         </div>
         <div class="sobre" id="sobre1">
             <img src="assents/images/perfil2.jpg">
+            <div class="linha"></div>
             <div class="sobre-text">
                 <p>✌Meu nome é João Pedro ou Ko</p>
                 <p>📅17 anos</p>

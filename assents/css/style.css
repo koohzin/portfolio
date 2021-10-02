@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
@@ -7,8 +6,24 @@
     border: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --bg-body:#F4827A;
+    --color-text:#F4827A;
+    --color-texta:#F2554A;
+}
+.dark:root{
+    --bg-body:#212529;
+    --color-text:#9EE3C3;
+    --color-texta:#9EE3C3;
+}
+.dark:root:hover{
+    --color-text:#9EE3C3;
+    --color-texta:#9EE3C3;
+}
+
 body {
-    background: #F4827A;
+    background:var(--bg-body);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -17,7 +32,23 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+    transition: 0.5s ease-in-out background;
 }
+
+#darkmode{
+    display: none;
+}
+
+.labeldark{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 150px;
+    top: 70px;
+    border: white solid 1px;
+    padding: 10px;
+}
+
 main.container {
     background: white;
     min-width: 320px;
@@ -33,7 +64,7 @@ main.container {
     border-radius: 8px;
 }
 #iconinicio{
-    color: #F4827A;
+    color: var( --color-text);
 }
 .home li{
     list-style-type: none;
@@ -43,16 +74,16 @@ main.container {
     position: relative;
 }
 #iconinicio:hover{
-    color:#F4827A !important;
+    color: var( --color-text) !important;
 }
 #iconsobre:hover{
-    color: #F4827A !important;
+    color: var( --color-text) !important;
 }
 #iconhabilidade:hover{
-    color: #F4827A !important;
+    color: var( --color-text) !important;
 }
 #iconcontato:hover{
-    color: #F4827A !important;
+    color: var( --color-text) !important;
 }
 .apresentacao{
     margin-top: 30px;
@@ -63,7 +94,7 @@ main.container {
     margin-bottom: 25px;
 }
 .apresentacao h1 a{
-    color: #F2554A;
+    color: var(--color-texta);
 }
 .apresentacao p{
     font-size: 20px;
@@ -75,6 +106,12 @@ main.container {
 }
 .sobre img{
     width:200px;
+}
+.sobre .linha{
+    background-color: var(--color-text);
+    width: 5px;
+    height: 211px;
+    margin-left: 50px;
 }
 .sobre .sobre-text{
     display: flex;
