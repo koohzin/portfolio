@@ -3,12 +3,20 @@ function iniciar(){
     document.getElementById('sobre1').style.display = 'none';
     document.getElementById('contato1').style.display = 'none';
     document.getElementById('habilidades1').style.display = 'none';
+    document.querySelector('.container1').style.display = '';
+    document.querySelector('.container2').style.display = 'none';
+    document.querySelector('.container3').style.display = 'none';
+    document.querySelector('.container4').style.display = 'none';
 }
 function vinicio(){
     document.getElementById('apresentacao1').style.display = 'flex';
     document.getElementById('sobre1').style.display = 'none';
     document.getElementById('contato1').style.display = 'none';
     document.getElementById('habilidades1').style.display = 'none';
+    document.querySelector('.container1').style.display = '';
+    document.querySelector('.container2').style.display = 'none';
+    document.querySelector('.container3').style.display = 'none';
+    document.querySelector('.container4').style.display = 'none';
         if(document.getElementById('apresentacao1').style.display == 'flex'){
             if(document.querySelector('#darkmode').checked == true){
         colorapresentacao.style.color = '#9EE3C3'
@@ -28,6 +36,10 @@ function vsobre(){
     document.getElementById('sobre1').style.display = 'flex';
     document.getElementById('contato1').style.display = 'none';
     document.getElementById('habilidades1').style.display = 'none';
+    document.querySelector('.container1').style.display = 'none';
+    document.querySelector('.container2').style.display = '';
+    document.querySelector('.container3').style.display = 'none';
+    document.querySelector('.container4').style.display = 'none';
 
         if(document.getElementById('sobre1').style.display == 'flex'){
             if(document.querySelector('#darkmode').checked == true){
@@ -49,6 +61,10 @@ function vcontato(){
     document.getElementById('sobre1').style.display = 'none';
     document.getElementById('contato1').style.display = 'flex';
     document.getElementById('habilidades1').style.display = 'none';
+    document.querySelector('.container1').style.display = 'none';
+    document.querySelector('.container2').style.display = 'none';
+    document.querySelector('.container3').style.display = '';
+    document.querySelector('.container4').style.display = 'none';
 
         if(document.getElementById('contato1').style.display == 'flex'){
             if(document.querySelector('#darkmode').checked == true){
@@ -71,6 +87,10 @@ function vhabilidade(){
     document.getElementById('sobre1').style.display = 'none';
     document.getElementById('contato1').style.display = 'none';
     document.getElementById('habilidades1').style.display = 'flex';
+    document.querySelector('.container1').style.display = 'none';
+    document.querySelector('.container2').style.display = 'none';
+    document.querySelector('.container3').style.display = 'none';
+    document.querySelector('.container4').style.display = '';
 
         if(document.getElementById('habilidades1').style.display == 'flex'){
             if(document.querySelector('#darkmode').checked == true){
