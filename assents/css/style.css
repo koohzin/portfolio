@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     transition: 0.5s ease-in-out background;
+    transition: 0.5s ease-in-out color;
 }
 
 #darkmode{
@@ -195,4 +196,16 @@ main.container {
 }
 .habilidades .js{
     background: #d6c01b;
+}
+#iconinicio{
+    transition: 0.5s ease-in-out color;
+}
+#iconsobre{
+    transition: 0.5s ease-in-out color;
+}
+#iconhabilidade{
+    transition: 0.5s ease-in-out color;
+}
+#iconcontato{
+    transition: 0.5s ease-in-out color;
 }
